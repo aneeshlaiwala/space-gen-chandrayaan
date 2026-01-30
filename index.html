@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer Analysis: Space Gen Chandrayaan | insights3D</title>
+    <style>
+        /* Base styles - Cosmic Space Theme */
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background:linear-gradient(135deg,#0a0a1a 0%,#0d1b2a 50%,#1b263b 100%);
+            color:#e0e0e0;
+            line-height:1.7;
+            padding: 20px;
+        }
+        .container{
+            max-width:1400px;
+            margin:0 auto;
+            background: linear-gradient(180deg, #0d1117 0%, #010409 100%);
+            box-shadow:0 20px 60px rgba(0,150,255,.3), 0 0 100px rgba(100,200,255,.1);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(100,150,255,.3);
+        }
+
+        /* Header - Deep Space Cosmic Style */
+        .header{
+            background:linear-gradient(135deg,#0d1b2a 0%,#1b263b 30%,#0a192f 70%,#000814 100%);
+            color:#fff;
+            padding:30px 30px 25px 30px;
+            text-align:center;
+            position:relative;
+            overflow:hidden
+        }
+        .header::before{
+            content:'';
+            position:absolute;
+            inset:0;
+            background: 
+                radial-gradient(ellipse at 20% 30%, rgba(255,255,255,0.1) 0%, transparent 40%),
+                radial-gradient(ellipse at 80% 70%, rgba(100,150,255,0.15) 0%, transparent 40%),
+                radial-gradient(ellipse at 50% 50%, rgba(255,200,100,0.1) 0%, transparent 60%),
+                radial-gradient(2px 2px at 20% 30%, white, transparent),
+                radial-gradient(2px 2px at 40% 70%, white, transparent),
+                radial-gradient(1px 1px at 90% 40%, white, transparent),
+                radial-gradient(2px 2px at 60% 20%, rgba(255,255,200,0.8), transparent),
+                radial-gradient(1px 1px at 30% 80%, white, transparent),
+                radial-gradient(1px 1px at 70% 60%, white, transparent),
+                radial-gradient(2px 2px at 10% 50%, white, transparent),
+                radial-gradient(1px 1px at 85% 15%, rgba(200,200,255,0.9), transparent),
+                radial-gradient(1px 1px at 50% 90%, white, transparent),
+                radial-gradient(1px 1px at 15% 65%, white, transparent),
+                radial-gradient(2px 2px at 95% 85%, rgba(255,220,150,0.8), transparent);
+            opacity: 1;
+        }
+        .header::after{
+            content:'';
+            position:absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            height:4px;
+            background: linear-gradient(90deg, transparent, #00d4ff, #4da6ff, #00d4ff, transparent);
+        }
+        .brand-name{
+            font-family: 'Segoe UI', sans-serif;
+            font-size:1.5em;
+            font-weight:800;
+            margin-top:12px;
+            position:relative;
+            z-index:2;
+            text-shadow: 0 0 20px rgba(0,200,255,0.7);
+            color: #00d4ff;
+        }
+        .story-title {
+            font-family: 'Georgia', serif;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 0 0 30px rgba(100,200,255,0.8), 0 2px 4px rgba(0,0,0,0.8);
+            margin-top: 10px;
+            position: relative;
+            z-index: 2;
+            letter-spacing: 3px;
+        }
+        .director-credit {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 1.0em;
+            font-weight: 500;
+            color: #aaccff;
+            margin-top: 8px;
+            position: relative;
+            z-index: 2;
+            font-style: italic;
+        }
+        .report-subtitle{
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 1.1em;
+            font-weight: 600;
+            opacity: .9;
+            margin-top: 8px;
+            position:relative;
+            z-index:2;
+            margin-bottom: 15px; 
+            color: #4da6ff;
+        }
+        .tagline {
+            font-size: 0.9em;
+            color: #88aacc;
+            font-style: italic;
+            margin-top: 5px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Footer */
+        .footer{
+            background: linear-gradient(135deg, #0d1b2a 0%, #000814 100%);
+            color:#fff;
+            padding:25px 30px;
+            text-align:center;
+            border-top: 2px solid #1b4965;
+        }
+        .footer h3 {
+            font-size:1.5em;
+            margin-bottom:10px;
+            font-family: 'Segoe UI', sans-serif;
+            color: #4da6ff;
+        }
+        .footer a {
+            color: #66b3ff;
+        }
+        
+        /* Cube - Space/Blue Theme */
+        .logo-container{
+            display:inline-block;
+            margin-bottom:10px;
+            perspective:1000px;
+            position:relative;
+            z-index:2;
+            background: rgba(0, 100, 200, 0.2);
+            border-radius: 50%;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 150, 255, 0.4);
+            border: 1px solid rgba(100,200,255,0.3);
+        }
+        .cube{
+            --cube-size:60px;
+            width:var(--cube-size);
+            height:var(--cube-size);
+            position:relative;
+            transform-style:preserve-3d;
+            animation:rotateCube 8s infinite linear
+        }
+        @keyframes rotateCube{
+            0%{transform:rotateX(0) rotateY(0)}
+            100%{transform:rotateX(360deg) rotateY(360deg)}
+        }
+        .cube-face{
+            position:absolute;
+            width:var(--cube-size);
+            height:var(--cube-size);
+            border:3px solid rgba(100,200,255,.85);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:calc(var(--cube-size) * 0.3);
+            font-weight:800;
+            color:#fff;
+            box-shadow: 0 4px 15px rgba(0, 150, 255, 0.5);
+        }
+        .front{background:linear-gradient(135deg,rgba(0,100,200,.95),rgba(0,50,150,.95));transform:translateZ(calc(var(--cube-size)/2))}
+        .back{background:linear-gradient(135deg,rgba(30,30,60,.95),rgba(10,10,40,.95));transform:rotateY(180deg) translateZ(calc(var(--cube-size)/2))}
+        .left{background:linear-gradient(135deg,rgba(20,50,100,.95),rgba(10,30,70,.95));transform:rotateY(-90deg) translateZ(calc(var(--cube-size)/2))}
+        .right{background:linear-gradient(135deg,rgba(50,100,150,.95),rgba(30,70,120,.95));transform:rotateY(90deg) translateZ(calc(var(--cube-size)/2))}
+        .top{background:linear-gradient(135deg,rgba(100,150,200,.95),rgba(50,100,150,.95));transform:rotateX(90deg) translateZ(calc(var(--cube-size)/2))}
+        .bottom{background:linear-gradient(135deg,rgba(20,30,50,.95),rgba(10,20,40,.95));transform:rotateX(-90deg) translateZ(calc(var(--cube-size)/2))}
+        
+        /* Content Styles - Dark Space Theme */
+        .report-content {
+            background: linear-gradient(180deg, #0d1117 0%, #010409 100%);
+        }
+        .tab-container {
+            display: flex;
+            background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+            border-bottom: 2px solid #1b4965;
+            flex-wrap: wrap; 
+        }
+        .tab-button {
+            padding: 15px 10px; 
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 0.85em; 
+            font-weight: 600;
+            color: #8b949e;
+            transition: all 0.3s;
+            flex-grow: 1;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            min-width: 80px;
+        }
+        .tab-button:hover {
+            background-color: rgba(0,150,255,0.1);
+            color: #58a6ff;
+        }
+        .tab-button.active {
+            background-color: #0d1117;
+            color: #58a6ff;
+            border-bottom: 3px solid #58a6ff;
+            margin-bottom: -2px;
+            text-shadow: 0 0 10px rgba(88,166,255,0.5);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 30px 40px;
+            animation: fadeIn 0.5s;
+            background: #0d1117;
+            color: #c9d1d9;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        h2 {
+            color: #58a6ff;
+            border-bottom: 2px solid #21262d;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2.0em;
+            margin-bottom: 25px;
+            text-shadow: 0 0 15px rgba(88,166,255,0.3);
+        }
+        h3 {
+            color: #79c0ff;
+            margin-top: 25px;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        h4 {
+            color: #a5d6ff;
+            margin-top: 20px;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+        }
+        .analysis-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+            border-radius: 10px;
+            border-left: 4px solid #1f6feb;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .swot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .swot-card {
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid;
+            background: #161b22;
+        }
+        .swot-card.strength {
+            background: linear-gradient(135deg, #0d2818 0%, #0a1f14 100%);
+            border-left-color: #3fb950;
+        }
+        .swot-card.weakness {
+            background: linear-gradient(135deg, #2d1a1a 0%, #1f1010 100%);
+            border-left-color: #f85149;
+        }
+        .swot-card.opportunity {
+            background: linear-gradient(135deg, #0d1d2d 0%, #0a1520 100%);
+            border-left-color: #58a6ff;
+        }
+        .swot-card.threat {
+            background: linear-gradient(135deg, #2d2a0d 0%, #1f1c08 100%);
+            border-left-color: #d29922;
+        }
+        .swot-card h4 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        .swot-card.strength h4 { color: #56d364; }
+        .swot-card.weakness h4 { color: #f85149; }
+        .swot-card.opportunity h4 { color: #58a6ff; }
+        .swot-card.threat h4 { color: #e3b341; }
+        
+        ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #c9d1d9;
+        }
+        li strong {
+            color: #79c0ff;
+        }
+        
+        p {
+            color: #c9d1d9;
+            margin-bottom: 15px;
+        }
+        strong {
+            color: #79c0ff;
+        }
+        
+        .video-container {
+            text-align: center;
+            padding: 30px;
+        }
+        .youtube-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #1f6feb, #0d419d);
+            color: #fff;
+            text-decoration: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(31,111,235,0.5);
+        }
+        .youtube-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(88,166,255,0.6);
+        }
+        .youtube-icon {
+            margin-right: 10px;
+        }
+        
+        /* Segment Cards */
+        .segment-card {
+            background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #1f6feb;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .segment-card h4 {
+            color: #58a6ff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 10px;
+        }
+        .segment-time {
+            display: inline-block;
+            background: #1f6feb;
+            color: #ffffff;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+        
+        /* Character Cards */
+        .character-card {
+            background: linear-gradient(135deg, #1c2128 0%, #161b22 100%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid #30363d;
+        }
+        .character-card h4 {
+            color: #79c0ff;
+            margin-top: 0;
+        }
+        
+        /* Promo Strategy Cards */
+        .promo-card {
+            background: linear-gradient(135deg, #0d1d2d 0%, #0a1520 100%);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #a371f7;
+        }
+        .promo-card h4 {
+            color: #a371f7;
+            margin-top: 0;
+        }
+        
+        /* Dialogue Box */
+        .dialogue-box {
+            background: #010409;
+            border-left: 3px solid #58a6ff;
+            padding: 15px 20px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #a5d6ff;
+            border-radius: 0 8px 8px 0;
+        }
+        .dialogue-box .speaker {
+            color: #79c0ff;
+            font-weight: bold;
+            font-style: normal;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        /* Action Items */
+        .action-item {
+            background: linear-gradient(135deg, #0d1d2d 0%, #0a1520 100%);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #58a6ff;
+            display: flex;
+            align-items: flex-start;
+        }
+        .action-number {
+            background: #1f6feb;
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        /* Hidden/Symbolic content */
+        .insight-box {
+            background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+            border: 1px solid #1f6feb;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .insight-box h4 {
+            color: #79c0ff;
+            margin-top: 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .tab-button {
+                font-size: 0.75em;
+                padding: 12px 8px;
+                min-width: 70px;
+            }
+            .tab-content {
+                padding: 20px 15px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0d1117;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f6feb;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #58a6ff;
+        }
+        
+        /* Genre Tags */
+        .genre-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #1f6feb, #0d419d);
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px;
+            border: 1px solid #58a6ff;
+        }
+        
+        /* Cast Grid */
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        /* Brand Cards */
+        .brand-card {
+            background: linear-gradient(135deg, #1c2128 0%, #161b22 100%);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #30363d;
+        }
+        .brand-card strong {
+            color: #a371f7;
+        }
+        
+        /* Multimodal Analysis */
+        .emotion-analysis {
+            background: linear-gradient(135deg, #0d1d2d 0%, #0a1520 100%);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            border: 1px solid #1f6feb;
+        }
+        .emotion-analysis h5 {
+            color: #58a6ff;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        
+        /* Moon/Space decorative element */
+        .moon-icon {
+            display: inline-block;
+            font-size: 1.5em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-container">
+                <div class="cube cube-template">
+                    <div class="cube-face front">3D</div>
+                    <div class="cube-face back">AI</div>
+                    <div class="cube-face left">i</div>
+                    <div class="cube-face right">3</div>
+                    <div class="cube-face top">🚀</div>
+                    <div class="cube-face bottom">D</div>
+                </div>
+            </div>
+            <div class="brand-name">insights3D</div>
+            <div class="story-title">🌙 SPACE GEN CHANDRAYAAN</div>
+            <div class="director-credit">A TVF Creation • Hotstar Specials</div>
+            <div class="report-subtitle">AI-Powered Trailer Intelligence Report</div>
+            <div class="tagline">"Inspired by Real Events" • India's Journey to the Moon</div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="tab-container">
+            <button class="tab-button active" onclick="openTab(event, 'synopsis')">🎬 Trailer Synopsis</button>
+            <button class="tab-button" onclick="openTab(event, 'directors-cut')">🎬 Director's Cut</button>
+            <button class="tab-button" onclick="openTab(event, 'story-pulse')">🧩 Story Pulse</button>
+            <button class="tab-button" onclick="openTab(event, 'lens-light')">🎥 Lens & Light</button>
+            <button class="tab-button" onclick="openTab(event, 'cut-rhythm')">✂️ Cut & Rhythm</button>
+            <button class="tab-button" onclick="openTab(event, 'narrative')">📖 Narrative & Storytelling</button>
+            <button class="tab-button" onclick="openTab(event, 'cast-craft')">👥 Cast & Craft</button>
+            <button class="tab-button" onclick="openTab(event, 'sound-dialogue')">🎧 Sound & Dialogue</button>
+            <button class="tab-button" onclick="openTab(event, 'visual-canvas')">🌆 Visual Canvas</button>
+            <button class="tab-button" onclick="openTab(event, 'scene-flow')">🎞️ Scene Flow</button>
+            <button class="tab-button" onclick="openTab(event, 'marketing-buzz')">🚀 Marketing Buzz</button>
+            <button class="tab-button" onclick="openTab(event, 'critics-lens')">🧠 Critic's Lens</button>
+            <button class="tab-button" onclick="openTab(event, 'behind-cut')">🔍 Behind the Cut</button>
+            <button class="tab-button" onclick="openTab(event, 'directors-call')">🎯 Director's Call</button>
+            <button class="tab-button" onclick="openTab(event, 'watch-trailer')">▶️ Watch Trailer</button>
+        </div>
+
+        <div class="report-content">
+            
+            <!-- Trailer Synopsis -->
+            <div id="synopsis" class="tab-content active">
+                <h2>🚀 Executive Summary</h2>
+                
+                <div class="analysis-section">
+                    <p>This promotional video for <strong>"Hotstar Specials: Space Gen Chandrayaan"</strong> effectively leverages a recent national triumph (Chandrayaan-3) to build anticipation for a dramatized retelling of its predecessor's challenges. The video's primary strength lies in its ability to quickly establish high stakes, inject national pride, and create a sense of urgent drama. The visual effects for the space sequences are commendable, and the rapid-fire editing maintains a high level of tension.</p>
+                    
+                    <p>However, the analysis reveals several areas for improvement. The rapid pacing, while creating urgency, sometimes sacrifices deeper emotional connection to individual characters, reducing them to archetypes of determination or failure. The sound design occasionally overpowers subtle narrative beats. While the premise is strong, the trailer leans heavily on familiar tropes of underdog stories and high-stakes scientific endeavors, which could lead to a predictable viewing experience if not handled with nuance in the full series. The overall impression is one of a competent, high-budget production, but the trailer itself doesn't fully differentiate the series from other "inspired by real events" dramas.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Key Takeaways</h3>
+                    <ul>
+                        <li><strong>Strengths:</strong> High production value, effective tension building, strong patriotic appeal, relevant historical event.</li>
+                        <li><strong>Weaknesses:</strong> Character depth appears limited in the trailer, some dialogue feels generic, potential for narrative predictability, reliance on fast cuts rather than sustained emotional beats.</li>
+                        <li><strong>Opportunity:</strong> Deeper exploration of individual sacrifices and challenges beyond the immediate mission failure, leveraging the emotional weight of national aspiration and public scrutiny.</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Series Details</h3>
+                    <p><strong>Platform:</strong> Hotstar Specials (JioHotstar)</p>
+                    <p><strong>Production:</strong> A TVF Creation</p>
+                    <p><strong>Lead Cast:</strong> Nakuul Mehta (Arjun), Shriya Pilgaonkar (Dr. Rukaiyah), Jitin Gulati</p>
+                    <p><strong>Release Date:</strong> All Episodes | January 23</p>
+                    <p><strong>Tag:</strong> Inspired by Real Events</p>
+                    
+                    <div style="margin-top: 20px;">
+                        <span class="genre-tag">Space Drama</span>
+                        <span class="genre-tag">Scientific Thriller</span>
+                        <span class="genre-tag">Patriotic Historical Drama</span>
+                        <span class="genre-tag">Inspired by True Events</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Director's Cut -->
+            <div id="directors-cut" class="tab-content">
+                <h2>🎬 Director's Cut: Critical Assessment</h2>
+                
+                <div class="analysis-section">
+                    <h3>Overall SWOT Analysis</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>High production quality with impressive CGI</li>
+                                <li>Emotionally resonant and patriotic subject matter</li>
+                                <li>Compelling performances by lead actors</li>
+                                <li>Effective tension-building through pacing and sound design</li>
+                                <li>Relevant and timely theme of national scientific achievement and resilience</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>Relies on some familiar narrative and character tropes, potentially lacking unique stylistic or storytelling originality</li>
+                                <li>Rapid pacing in the trailer may sacrifice deeper emotional connection to individual struggles</li>
+                                <li>Some dialogue feels generic</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>The series can delve deeper into the nuanced human stories, internal scientific debates, and broader societal impact</li>
+                                <li>Strong potential for multi-platform engagement through creative marketing strategies</li>
+                                <li>High monetization potential through strategic brand partnerships and merchandise</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>Potential for the series to become overly nationalistic or didactic, alienating some viewers</li>
+                                <li>Risk of becoming a generic "comeback story" if character arcs and plot complexities are not fully explored</li>
+                                <li>Competition from other global space-themed dramas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Pulse / Hooks -->
+            <div id="story-pulse" class="tab-content">
+                <h2>🧩 Story Pulse: Narrative & Storytelling</h2>
+                
+                <div class="analysis-section">
+                    <p>The video tells a compelling story of national ambition, devastating failure, and the resilient pursuit of redemption. It centers around India's space program, specifically the Chandrayaan missions, drawing directly from real events.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Story Being Told</h3>
+                    <p>The trailer depicts the initial excitement and subsequent failure of a lunar lander (implied Chandrayaan-2's Vikram Lander), leading to public scrutiny, internal blame, and personal despair among the scientists. This sets the stage for a second, more challenging attempt (Chandrayaan-3), where the team must overcome not only technical hurdles but also the psychological scars of past failure and external pressures (global pandemic, international competition, need for self-reliance). The narrative arc is clear: <strong>Fall, Redemption, Re-attempt</strong>.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Narrative Structure</h3>
+                    <ul>
+                        <li><strong>Inciting Incident/Setup (0:00-0:19):</strong> Introduction to the high-stakes lunar landing, building intense anticipation, followed by sudden, catastrophic failure.</li>
+                        <li><strong>Consequences & Conflict (0:20-0:44):</strong> The aftermath of the failure – public humiliation, internal investigations, blame, and the personal toll on the lead scientist (Arjun). This establishes the core emotional conflict.</li>
+                        <li><strong>Rising Action & New Challenge (0:45-1:19):</strong> A new mission (Chandrayaan-3) is announced amidst international competition and global supply chain disruptions (Covid-19). This forces the team to innovate and pursue "Make in India." The stakes are higher due to past failure and external pressure.</li>
+                        <li><strong>Call to Action & Renewed Hope (1:20-1:33):</strong> The female lead (implied Dr. Rukaiyah, based on character design) challenges the senior scientist (Dr. Ramaiah) to accept the "mammoth task." The team recommits.</li>
+                        <li><strong>Climax Teaser (1:34-1:40):</strong> Countdown to launch, new technical issues arise, creating a cliffhanger.</li>
+                        <li><strong>Resolution (implied):</strong> The series will likely follow the team's journey to overcome these obstacles and successfully land Chandrayaan-3.</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Effectiveness</h3>
+                    <p>The storytelling is direct and effective for a trailer. It quickly establishes the emotional core—the heartbreak of failure and the desperate need to succeed. The use of real-world events (Chandrayaan-2, Covid-19, Chandrayaan-3) grounds the drama and lends it immediate relevance and patriotic appeal. The focus on overcoming adversity resonates strongly.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>SWOT Analysis (Narrative)</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>Based on a highly resonant and inspiring true story for the target audience</li>
+                                <li>Clear, high-stakes narrative arc of failure and redemption</li>
+                                <li>Strong themes of national pride, resilience, and scientific dedication</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>The trailer doesn't hint at much narrative complexity beyond the "underdog comeback" story, which could be predictable</li>
+                                <li>The initial setup and failure feel rushed, potentially diminishing the emotional weight of the loss</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>Explore the internal politics and scientific debates within ISRO</li>
+                                <li>Delve into the personal lives and sacrifices of the scientists more deeply</li>
+                                <li>Introduce unforeseen external complications beyond the obvious ones shown</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>A too-simplistic or overly patriotic narrative could alienate viewers seeking nuanced storytelling</li>
+                                <li>Failure to explore the true human cost of such endeavors could make it feel superficial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lens & Light / Cinematography -->
+            <div id="lens-light" class="tab-content">
+                <h2>🎥 Lens & Light: Cinematography & Visual Language</h2>
+                
+                <div class="analysis-section">
+                    <p>The cinematography employs a blend of epic scale and intimate human drama. The initial space shots are grand, utilizing high-contrast lighting to emphasize the vastness of space against the detailed spacecraft. Inside the control room, a more grounded, functional aesthetic is adopted, with practical lighting and often muted colors that highlight the intensity and pressure on the scientists.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Camera Angles and Shot Composition</h3>
+                    <ul>
+                        <li><strong>Wide Shots:</strong> Used effectively in the opening sequence and for the control room overview (0:08-0:09) to establish scale and the collective effort. The shot of the ISRO campus (0:47) provides context.</li>
+                        <li><strong>Medium Shots:</strong> Dominant in dialogue scenes, allowing focus on character reactions and interactions (e.g., 0:24, 0:29).</li>
+                        <li><strong>Close-ups:</strong> Employed for emotional impact, particularly on the faces of characters under stress (e.g., 0:07, 0:13, 0:16, 0:18, 0:38). These shots try to convey internal struggle and determination.</li>
+                        <li><strong>Low Angles:</strong> Used briefly (e.g., during the rocket launch) to convey power and awe.</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Camera Movement</h3>
+                    <ul>
+                        <li><strong>Subtle Panning/Tilting:</strong> Used to follow action or shift focus within a scene, maintaining a sense of observation.</li>
+                        <li><strong>Handheld (implied):</strong> Some shots in the control room feel slightly less rigid, adding to the immediate, high-stakes atmosphere.</li>
+                        <li><strong>Dynamic CGI movements:</strong> In space sequences, the camera swoops around the spacecraft, emphasizing its journey and impending landing.</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Lighting</h3>
+                    <ul>
+                        <li><strong>High Contrast (Space):</strong> Bright sun against deep black, creating a dramatic, almost ethereal look.</li>
+                        <li><strong>Controlled, Practical (Control Room):</strong> Predominantly fluorescent overhead lights, giving a realistic, somewhat sterile, and high-pressure environment. Dramatic lighting is used in moments of intense emotional focus (e.g., 0:30-0:38, with warm, darker tones during the questioning scenes, suggesting introspection or difficulty).</li>
+                        <li><strong>Warm, Domestic (Home):</strong> Orange/yellow hues dominate the lead character's home (0:53), indicating a more personal, reflective space, contrasting with the clinical work environment.</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Color Grading</h3>
+                    <p>The overall palette leans towards <strong>cool blues and grays</strong> for scientific and high-pressure environments, occasionally punctuated by warmer tones to signify hope, human connection, or dramatic shifts. The initial "Hotstar Specials" title card is a vibrant teal, setting a modern, technologically advanced tone. The news report overlay (0:11, 1:05) introduces a stark, bright aesthetic for journalistic inserts.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Overall Visual Aesthetic</h3>
+                    <p>The aesthetic is generally polished and modern, befitting a high-stakes space drama. It balances grand CGI sequences with human-centric shots, attempting to ground the scientific endeavor in relatable human emotions and struggles. The visual language effectively communicates tension, urgency, and the gravitas of the mission.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>SWOT Analysis (Cinematography)</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>High-quality CGI and VFX for space sequences</li>
+                                <li>Effective use of close-ups for emotional impact</li>
+                                <li>Realistic and atmospheric lighting in the control room</li>
+                                <li>Polished overall look</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>Some indoor shots are a bit flat, lacking distinctive visual flair beyond functionality</li>
+                                <li>The visual language, while competent, doesn't always break new ground in terms of unique stylistic choices for the genre</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>Experiment with more creative shot compositions or camera movements during emotionally charged scenes to elevate the drama beyond standard coverage</li>
+                                <li>Utilize color grading more aggressively to signal shifts in tone or character arcs</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>Over-reliance on conventional visual tropes could make the series visually forgettable among other space-themed productions</li>
+                                <li>Inconsistent visual quality between practical and CGI elements could break immersion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cut & Rhythm / Pacing & Editing -->
+            <div id="cut-rhythm" class="tab-content">
+                <h2>✂️ Cut & Rhythm: Pacing & Editing</h2>
+                
+                <div class="analysis-section">
+                    <p>The video's pacing is <strong>exceptionally fast</strong>, especially in the first half, characterized by rapid cuts and a quick succession of scenes. This choice is deliberate for a trailer, designed to convey urgency, build suspense, and showcase the breadth of the narrative quickly.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Rhythm and Flow</h3>
+                    <ul>
+                        <li><strong>Opening:</strong> Starts with a calm, almost serene shot in space, quickly transitioning to the tense control room, setting up immediate drama.</li>
+                        <li><strong>First Half (0:00-0:19):</strong> High-energy, quick cuts between space, the control room, and character reactions during the initial landing attempt. This builds a palpable sense of countdown and impending crisis. The escalating sound effects amplify this.</li>
+                        <li><strong>Mid-section (0:20-0:42):</strong> A slight shift in pacing, moving from the disaster's immediate aftermath (the hug, the interrogations) to more investigative and introspective moments. Cuts are still relatively quick but allow for short dialogue exchanges.</li>
+                        <li><strong>Second Half (0:43-1:40):</strong> The pacing picks up again, driven by the announcement of a new mission, international competition, and the challenges of "Make in India." It culminates in a frantic, dramatic sequence leading up to the second launch attempt. The final moments are a crescendo of fast cuts and intense sound.</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Editing Techniques</h3>
+                    <ul>
+                        <li><strong>Jump Cuts & Montage:</strong> Frequently used to condense time and highlight key moments or emotional states (e.g., the quick succession of character faces as the mission fails).</li>
+                        <li><strong>Parallel Editing:</strong> Intercutting between the spacecraft in space and the control room personnel effectively heightens tension.</li>
+                        <li><strong>Visual Overlays:</strong> News tickers and social media comments (0:54-0:55) are integrated to provide context and demonstrate public sentiment, albeit in a somewhat heavy-handed manner.</li>
+                        <li><strong>Sound-driven Edits:</strong> Many cuts are synchronized with dramatic sound effects or musical beats, enhancing the impact.</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Contribution to Rhythm and Flow</h3>
+                    <p>The editing is highly effective in establishing a sense of urgency and high stakes. It ensures that the viewer is constantly engaged and propelled forward, mirroring the intense pressure faced by the characters. However, the relentless pace, typical for a trailer, leaves little room for lingering on individual emotional beats, which might be a deliberate choice to keep the audience wanting more from the full series.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>SWOT Analysis (Pacing & Editing)</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>Excels at building tension and conveying urgency</li>
+                                <li>Dynamic and engaging for a trailer format</li>
+                                <li>Effectively uses montage to condense narrative</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>Can feel relentless at times, potentially overwhelming some viewers</li>
+                                <li>Limited moments for subtle emotional development due to rapid cuts</li>
+                                <li>Some transitions feel abrupt rather than flowing organically</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>Varying the pacing more dynamically within the series itself to allow for moments of calm, reflection, or character-driven exposition</li>
+                                <li>Using more creative visual transitions to enhance narrative rather than simply cutting</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>Viewer fatigue if the rapid pacing is maintained throughout the series without sufficient variation</li>
+                                <li>Sacrificing character depth for the sake of constant momentum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Narrative & Storytelling -->
+            <div id="narrative" class="tab-content">
+                <h2>📖 Narrative & Storytelling</h2>
+                
+                <div class="analysis-section">
+                    <p>The video tells a compelling story of <strong>national ambition, devastating failure, and the resilient pursuit of redemption</strong>. It centers around India's space program, specifically the Chandrayaan missions, drawing directly from real events.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Story Being Told</h3>
+                    <p>The trailer depicts the initial excitement and subsequent failure of a lunar lander (implied Chandrayaan-2's Vikram Lander), leading to public scrutiny, internal blame, and personal despair among the scientists. This sets the stage for a second, more challenging attempt (Chandrayaan-3), where the team must overcome not only technical hurdles but also the psychological scars of past failure and external pressures (global pandemic, international competition, need for self-reliance).</p>
+                    <p>The narrative arc is clear: <strong>Fall → Redemption → Re-attempt</strong></p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Detailed Narrative Structure</h3>
+                    
+                    <h4>Inciting Incident/Setup (0:00-0:19)</h4>
+                    <p>Introduction to the high-stakes lunar landing, building intense anticipation, followed by sudden, catastrophic failure.</p>
+                    
+                    <h4>Consequences & Conflict (0:20-0:44)</h4>
+                    <p>The aftermath of the failure – public humiliation, internal investigations, blame, and the personal toll on the lead scientist (Arjun). This establishes the core emotional conflict.</p>
+                    
+                    <h4>Rising Action & New Challenge (0:45-1:19)</h4>
+                    <p>A new mission (Chandrayaan-3) is announced amidst international competition and global supply chain disruptions (Covid-19). This forces the team to innovate and pursue "Make in India." The stakes are higher due to past failure and external pressure.</p>
+                    
+                    <h4>Call to Action & Renewed Hope (1:20-1:33)</h4>
+                    <p>The female lead (implied Dr. Rukaiyah) challenges the senior scientist (Dr. Ramaiah) to accept the "mammoth task." The team recommits.</p>
+                    
+                    <h4>Climax Teaser (1:34-1:40)</h4>
+                    <p>Countdown to launch, new technical issues arise, creating a cliffhanger.</p>
+                    
+                    <h4>Resolution (implied)</h4>
+                    <p>The series will likely follow the team's journey to overcome these obstacles and successfully land Chandrayaan-3.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Effectiveness</h3>
+                    <p>The storytelling is direct and effective for a trailer. It quickly establishes the emotional core—the heartbreak of failure and the desperate need to succeed. The use of real-world events (Chandrayaan-2, Covid-19, Chandrayaan-3) grounds the drama and lends it immediate relevance and patriotic appeal. The focus on overcoming adversity resonates strongly.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>SWOT Analysis (Narrative)</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>Based on a highly resonant and inspiring true story for the target audience</li>
+                                <li>Clear, high-stakes narrative arc of failure and redemption</li>
+                                <li>Strong themes of national pride, resilience, and scientific dedication</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>The trailer doesn't hint at much narrative complexity beyond the "underdog comeback" story, which could be predictable</li>
+                                <li>The initial setup and failure feel rushed, potentially diminishing the emotional weight of the loss</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>Explore the internal politics and scientific debates within ISRO</li>
+                                <li>Delve into the personal lives and sacrifices of the scientists more deeply</li>
+                                <li>Introduce unforeseen external complications beyond the obvious ones shown</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>A too-simplistic or overly patriotic narrative could alienate viewers seeking nuanced storytelling</li>
+                                <li>Failure to explore the true human cost of such endeavors could make it feel superficial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cast & Craft / Character & Performance -->
+            <div id="cast-craft" class="tab-content">
+                <h2>👥 Cast & Craft: Characterization & Performance</h2>
+                
+                <div class="analysis-section">
+                    <p>The video introduces several key characters, primarily through their reactions to the mission's failure and the subsequent challenge. While it's a trailer, it effectively hints at their roles and emotional states.</p>
+                </div>
+
+                <div class="cast-grid">
+                    <div class="character-card">
+                        <h4>🧑‍🚀 The Lead Scientist (Arjun) – Nakuul Mehta</h4>
+                        <p><strong>Characterization:</strong> Introduced as a dedicated, intense engineer. His motivation is redemption and scientific integrity. We see him driven, then devastated by failure (0:43), and finally resolute. His journey from personal shame to renewed determination appears central.</p>
+                        <p><strong>Performance Quality:</strong> Conveys intensity and inner turmoil effectively. His facial expressions, particularly during moments of crisis (0:07, 0:13, 0:38, 0:53) and defiance (0:57), are strong. His portrayal of a man burdened by failure but refusing to quit is compelling.</p>
+                    </div>
+
+                    <div class="character-card">
+                        <h4>👨‍💼 The Senior Scientist (Dr. Ramaiah)</h4>
+                        <p><strong>Characterization:</strong> The mentor figure, perhaps the ISRO Chief. Initially seen as stoic and authoritative (0:09, 0:29), then burdened by the failure and the weight of the new challenge (0:52, 1:11), and finally hopeful, initiating the new mission (1:25). His motivation seems to be national pride and leadership.</p>
+                        <p><strong>Performance Quality:</strong> Delivers lines with appropriate gravitas and authority, establishing his role efficiently within the trailer's limited time.</p>
+                    </div>
+
+                    <div class="character-card">
+                        <h4>👩‍🔬 The Female Scientist (Dr. Rukaiyah) – Shriya Pilgaonkar</h4>
+                        <p><strong>Characterization:</strong> Portrayed as intelligent, observant, and empathetic. She's seen supporting Arjun (0:56) and challenging the status quo (1:21). Her motivation appears to be an unwavering belief in the mission and her team.</p>
+                        <p><strong>Performance Quality:</strong> Her performance is subtle but impactful. Her expressions of concern, frustration, and eventual determination are clear (0:14, 0:18, 0:48, 0:50, 0:56, 1:12, 1:34). She brings a grounding presence to the high-stakes environment.</p>
+                    </div>
+
+                    <div class="character-card">
+                        <h4>🏛️ The Bureaucrat/Antagonist – Jitin Gulati</h4>
+                        <p><strong>Characterization:</strong> Seen questioning the team and making stern remarks (0:24, 0:59). His motivation seems to be accountability and pressure for results, creating external conflict.</p>
+                        <p><strong>Performance Quality:</strong> Delivers lines with appropriate gravitas and authority, establishing his role efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Overall Assessment</h3>
+                    <p>Overall, the performances appear solid and effective for a promotional piece, successfully establishing the emotional stakes and character dynamics without delving too deeply, leaving that for the full series.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>SWOT Analysis (Character & Performance)</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>Strong lead actors who convey key emotions effectively</li>
+                                <li>Clear differentiation of character roles and motivations</li>
+                                <li>Performances capable of carrying the emotional weight of the story</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>Some supporting characters feel a bit one-dimensional in the trailer (e.g., the critical bureaucrat)</li>
+                                <li>The quick cuts limit the full display of character arcs, which might leave some performances feeling truncated</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>Leverage the established chemistry and emotional depth of the leads in the series</li>
+                                <li>Explore the backstories and personal sacrifices of supporting characters to add more layers to the team dynamic</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>Characters could fall into stereotypical "genius under pressure" or "stoic leader" roles if not developed further in the series</li>
+                                <li>A lack of nuanced emotional exploration could make them less relatable over time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sound & Dialogue -->
+            <div id="sound-dialogue" class="tab-content">
+                <h2>🎧 Sound & Dialogue</h2>
+                
+                <div class="analysis-section">
+                    <h3>Background Score and Audio</h3>
+                    
+                    <h4>Opening (0:00-0:19)</h4>
+                    <p>The score begins with an ominous, building synth pad, typical of sci-fi thrillers. As the mission progresses, it incorporates percussive elements and rising string motifs, creating intense suspense. The sudden silence followed by a jarring crash sound effect (0:19) is highly effective in signifying disaster.</p>
+                    
+                    <h4>Mid-section (0:20-0:42)</h4>
+                    <p>The music shifts to a more somber, investigative tone, with low, melancholic strings and subtle ambient sounds during the questioning scenes. This transitions to a slightly more reflective, almost defeated melody as Arjun washes his face.</p>
+                    
+                    <h4>Second Half (0:43-1:40)</h4>
+                    <p>The score becomes more motivational and patriotic, with a rising orchestral theme. As the new challenges emerge, it incorporates urgent, staccato strings and percussion, building towards a hopeful yet tense crescendo for the second launch. The final orchestral hit is powerful.</p>
+                    
+                    <h4>Sound Effects</h4>
+                    <p>Crucial in building immersion and tension. From the subtle hum of the control room to the dramatic explosions and rocket thrusts, they are well-placed. The distinct sound of the social media notifications (0:54) is a clever touch to represent public opinion.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Complete Dialogue Breakdown</h3>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:01-0:02 (English, Control Room):</span>
+                        "All parameters normal. Ground stations locked. IDSN ready to track." - Delivered calmly, professionally, setting the initial tone of control.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:06-0:07 (English, Control Room):</span>
+                        "Ready to track Vikram. Initiating fine braking. Copy. Systems green." - Similar professional delivery, escalating slightly as "fine braking" begins.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:10-0:11 (Hindi, News Anchor):</span>
+                        "लगभग 12 सेकंड में हम लोग चंद्रमा की सतह पर होंगे।" (In approximately 12 seconds, we will be on the surface of the moon.) - Delivered by a news anchor, creating external hype and national anticipation.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:24-0:28 (Hindi, Bureaucrat):</span>
+                        "इसरो चीफ को पीएम ने गले लगा लिया इसका ये मतलब नहीं है कि मैं आपके गले नहीं पकडूंगा।" (Just because the PM hugged the ISRO Chief, doesn't mean I won't catch you by the neck.) - Delivered with clear authority and veiled threat, establishing the bureaucrat's pressure.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:29-0:30 (Hindi, Dr. Ramaiah):</span>
+                        "विक्रम क्रैश क्यों हुआ?" (Why did Vikram crash?) - Delivered sharply, with an interrogative tone, conveying urgency for answers.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:35-0:36 (Hindi/English, Arjun):</span>
+                        "सर एक बार भी नहीं। My program was perfect." (Sir, not even once. My program was perfect.) - Arjun's defensive, slightly frustrated, yet confident delivery, defending his work.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:39-0:40 (Hindi, Senior Official):</span>
+                        "परफेक्ट होता तो क्रैश होता ही नहीं।" (If it was perfect, it wouldn't have crashed.) - The senior official's blunt, accusatory tone, driving the point of failure.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:43-0:44 (English, Arjun):</span>
+                        "I think I'm just a failure." - Arjun's voice is low, despairing, reflecting personal defeat.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:45-0:46 (Hindi, Official):</span>
+                        "इस वक्त मून मिशन ही नहीं उसका अनाउंसमेंट भी एक रेस बन चुका है।" (Right now, this isn't just a moon mission; the announcement itself has become a race.) - Delivered with gravitas, highlighting external pressure and competition.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:55-0:56 (English, Dr. Rukaiyah):</span>
+                        "Arjun, you're a problem solver. Not a quitter." - The female lead's supportive, encouraging tone, a turning point for Arjun.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">0:59-1:03 (Hindi, Bureaucrat):</span>
+                        "चंद्रयान-2 की असफलता के बाद, चंद्रयान-3 हमारा एकमात्र मौका है।" (After the failure of Chandrayaan-2... Chandrayaan-3 is our only chance.) - Delivered with a mix of resignation and determination, emphasizing the last opportunity.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">1:17-1:18 (English, Official):</span>
+                        "Making Chandrayaan-3 entirely in India is a mammoth task." - Delivered with a sense of awe and the scale of the challenge.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">1:21-1:22 (English, Dr. Rukaiyah):</span>
+                        "In that case... challenge accepted, sir." - The female lead's firm, confident delivery, signaling a recommitment.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">1:25-1:26 (Hindi, Dr. Ramaiah):</span>
+                        "चलिए डॉक्टर रमैया। चाँद पर चलते हैं।" (Come on, Dr. Ramaiah. Let's go to the moon.) - The senior scientist's call to action, full of renewed hope.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">1:29-1:30 (Hindi, Team Member):</span>
+                        "4 साल पहले लैंडिंग के टाइम क्या हुआ था वो भूल गई क्या?" (Have you forgotten what happened during the landing four years ago?) - Delivered with urgency and a rhetorical challenge.
+                    </div>
+                    
+                    <div class="dialogue-box">
+                        <span class="speaker">1:38-1:39 (English, Arjun - Panicked):</span>
+                        "Stop, stop, stop! Ma'am, we need to stop the launch now!" - High-pitched, panicked delivery, creating the final cliffhanger.
+                    </div>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Quality Assessment</h3>
+                    <p>The dialogue effectively conveys the plot points and character emotions, though some lines ("I'm just a failure," "problem solver, not a quitter") lean towards dramatic clichés. The mix of Hindi and English dialogue is common in Indian productions and feels natural within the context. The sound design is robust, with the score being a particularly strong element in driving the emotional narrative.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>SWOT Analysis (Sound & Dialogue)</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>Powerful and effective background score that enhances tension and emotional impact</li>
+                                <li>Clear sound design with good use of sound effects</li>
+                                <li>Strong, impactful dialogue delivery by key actors</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>Some dialogue feels formulaic or overtly expositional for a trailer</li>
+                                <li>The music can occasionally be too generic or manipulative during emotional beats</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>Introduce more nuanced or character-specific dialogue that reveals personality beyond immediate plot needs</li>
+                                <li>Utilize silence or more subtle soundscapes to heighten specific dramatic moments</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>Over-reliance on a generic "heroic" score could reduce emotional authenticity</li>
+                                <li>Dialogue that feels forced or unnatural could detract from the realism of a story inspired by true events</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Canvas / Setting & World-Building -->
+            <div id="visual-canvas" class="tab-content">
+                <h2>🌆 Visual Canvas: Setting & World-Building</h2>
+                
+                <div class="analysis-section">
+                    <p>The video establishes its world across several distinct settings, each contributing to the narrative and mood.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>🌙 Outer Space / Lunar Surface (0:00-0:03, 0:06, 0:12, 0:15, 0:20, 1:04)</h3>
+                    <p>The primary setting for the mission itself. These CGI-rendered environments convey the vastness, challenge, and ultimate goal of space exploration. The cratered lunar surface emphasizes the harsh, unforgiving nature of the destination. It sets an epic, aspirational tone.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>🖥️ Space Control Room (0:04, 0:08, 0:13, 0:17-0:18, 1:27-1:30, 1:34-1:35, 1:39)</h3>
+                    <p>The central hub of human activity. This setting, with its multiple screens, focused personnel, and high-tech equipment, communicates extreme pressure, technical complexity, and collective human effort. The controlled lighting and organized chaos evoke a sense of professional intensity. The shift from hope to despair is starkly visible here.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>🏛️ Office/Interrogation Rooms (0:24-0:38, 0:45-0:46, 0:59-1:03)</h3>
+                    <p>These settings, often with wooden paneling and subdued lighting, signify authority, accountability, and the internal political pressure faced by the scientists. They create a tense, confined atmosphere where characters are questioned and decisions are made under duress.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>🏢 ISRO Campus Exterior (0:47, 1:10)</h3>
+                    <p>Shots of the modern, expansive campus communicate the scale of the institution and the thousands of people involved. It briefly introduces an element of open space and community, contrasting with the intense control room.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>📺 Newsroom/Media (0:11, 1:05-1:08)</h3>
+                    <p>Briefly shows media coverage, emphasizing public awareness, national pride, and the global attention on the mission.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>🏠 Home Setting (0:53-0:55)</h3>
+                    <p>The lead scientist's home, with warmer lighting and personal items, offers a glimpse into his personal life and the emotional toll the mission takes. It humanizes the character.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>🌳 Outdoor, Casual Setting (1:20-1:22)</h3>
+                    <p>A brief scene outdoors with a more natural, warm light, suggesting a moment of personal discussion and decision outside the formal work environment.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>World-Building Assessment</h3>
+                    <p>The world-building is functional and effective for a trailer, quickly establishing the key locations and their emotional resonance without deep dives. It successfully grounds the grand scientific ambition in relatable human environments and challenges.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>SWOT Analysis (Setting & World-Building)</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>Convincing depiction of space and lunar environments through CGI</li>
+                                <li>Realistic and immersive control room setting</li>
+                                <li>Effectively uses various locations to convey different aspects of the narrative (pressure, personal toll, public scrutiny)</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>Some indoor settings (offices, home) are generic, lacking unique visual identity</li>
+                                <li>The quick cuts prevent lingering on these environments to build deeper atmospheric resonance</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>Incorporate more unique architectural or cultural details in the ISRO campus shots</li>
+                                <li>Use lighting and set dressing in domestic or office scenes to reveal more about characters' personalities or cultural context</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>Standardized or generic settings could make the series feel less distinctive compared to other productions within the same genre</li>
+                                <li>Failure to fully leverage the contrasting environments to amplify narrative themes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scene Flow / Segment Breakdown -->
+            <div id="scene-flow" class="tab-content">
+                <h2>🎞️ Scene Flow: Segment-by-Segment Breakdown</h2>
+                
+                <div class="analysis-section">
+                    <p>This breakdown focuses on logical chunks rather than strict 15-second intervals, given the rapid editing.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">0:00-0:03</span>
+                    <h4>The Approach</h4>
+                    <p><strong>Description:</strong> A wide shot of a spacecraft (Vikram Lander) approaching the moon, illuminated by a distant sun. Starts with a serene but building ambient sound. "hotstar specials" branding appears.</p>
+                    <p><strong>✅ Working:</strong> Visually stunning CGI, immediately establishes the grand scale of the mission and the "space" genre. The "hotstar specials" branding is prominent but integrated.</p>
+                    <p><strong>❌ Not Working:</strong> The voiceover begins almost immediately, slightly jarring the serene visual.</p>
+                    <p><strong>Recommendations:</strong> Consider a slightly longer, quieter opening beat to let the cosmic beauty sink in before the voiceover and brand appear, enhancing the transition into the technical world.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">0:03-0:09</span>
+                    <h4>Control Room & Initial Descent</h4>
+                    <p><strong>Description:</strong> Cuts to a busy control room with scientists monitoring screens. Voiceover continues with technical updates: "All parameters normal. Ground stations locked. IDSN ready to track. A TVF CREATION." Shots of ground station dishes. The lander continues its descent. Close-up on the male lead (Arjun) speaking into a mic with intense focus.</p>
+                    <p><strong>✅ Working:</strong> Effectively establishes the human element and the high-tech environment. Arjun's intense gaze draws the viewer in. The rapid intercutting builds initial tension.</p>
+                    <p><strong>❌ Not Working:</strong> "A TVF CREATION" feels a bit like an afterthought, quickly flashing on screen.</p>
+                    <p><strong>Recommendations:</strong> If the production company credit is important, integrate it more smoothly or place it at the very beginning/end for better retention. Focus on the human element more intensely by extending Arjun's close-up slightly before the next cut.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">0:09-0:19</span>
+                    <h4>Countdown to Disaster</h4>
+                    <p><strong>Description:</strong> Wide shot of the control room. A suited official looks on. News report overlay announces the imminent landing. The lander descends, rockets firing. Close-ups on the faces of scientists (Arjun, female scientist, another male scientist) showing increasing anxiety. Dialogue counts down distances: "3 kilometers... 2.9... 2.786..." The screen flickers, a sharp, loud sound, then black.</p>
+                    <p><strong>✅ Working:</strong> Masterfully builds tension through rapid cuts, escalating dialogue, concerned facial expressions, and urgent sound design. The sudden black screen and sharp sound effectively convey catastrophic failure.</p>
+                    <p><strong>❌ Not Working:</strong> The news overlay, while informational, slightly distracts from the pure visual storytelling of the control room tension.</p>
+                    <p><strong>Recommendations:</strong> The news overlay could be slightly more integrated, perhaps with a subtle transparency or motion, to feel less like a hard cut. Ensure the raw emotional impact on the scientists isn't overshadowed by external info.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">0:19-0:28</span>
+                    <h4>The Aftermath & Blame</h4>
+                    <p><strong>Description:</strong> "INSPIRED BY REAL EVENTS" text appears over a shot of the moon. A somber scene of the PM hugging the ISRO Chief, surrounded by media. Cuts to a tense office setting where a bureaucrat (Jitin Gulati) confronts the scientists, saying, "Just because the PM hugged the ISRO Chief, doesn't mean I won't catch you by the neck."</p>
+                    <p><strong>✅ Working:</strong> The "Inspired by real events" text grounds the drama. The hug is a powerful, recognizable image, quickly followed by the harsh reality of accountability. The bureaucrat's dialogue immediately establishes conflict and pressure.</p>
+                    <p><strong>❌ Not Working:</strong> The transition from the disaster to the PM's hug feels a little too fast, perhaps not allowing enough emotional processing time for the viewer regarding the initial failure.</p>
+                    <p><strong>Recommendations:</strong> A brief, poignant moment of silent reflection after the crash might amplify the impact of the subsequent scene.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">0:28-0:44</span>
+                    <h4>Interrogation & Personal Failure</h4>
+                    <p><strong>Description:</strong> Dr. Ramaiah asks, "Why did Vikram crash?" Various scientists offer theories (engine failure, cyber attacks). Arjun defends his perfect program. Ramaiah retorts, "If it was perfect, it wouldn't have crashed." Arjun walks off, distraught, splashes water on his face in a bathroom, and states, "I think I'm just... a failure."</p>
+                    <p><strong>✅ Working:</strong> Effectively establishes the internal investigation and the psychological toll on Arjun. His internal struggle and self-doubt are quickly made clear. The lighting in the interrogation scenes is darker, matching the mood.</p>
+                    <p><strong>❌ Not Working:</strong> The dialogue about "perfect program" and "failure" is a bit generic. The bathroom scene is a common trope for conveying personal despair.</p>
+                    <p><strong>Recommendations:</strong> Explore more specific technical details or unique character perspectives during the interrogation to make it less generic. The bathroom scene could be elevated with more unique visual staging or a less direct line of self-condemnation.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">0:45-0:58</span>
+                    <h4>The New Challenge & Motivation</h4>
+                    <p><strong>Description:</strong> A press conference announces a new mission. Bureaucrat explains the moon mission is now a "race" due to international announcements (Russia's Luna 25). Arjun sees social media comments mocking ISRO. Female scientist tells him, "Arjun, you're a problem solver. Not a quitter." Arjun looks determined.</p>
+                    <p><strong>✅ Working:</strong> Clearly establishes the new, higher stakes (international competition, public opinion) and the call to action for Arjun. The female scientist's line is a powerful moment of encouragement.</p>
+                    <p><strong>❌ Not Working:</strong> The social media overlays, while informative, are a bit visually busy and could be integrated more subtly. The "problem solver, not a quitter" line is a classic motivational trope.</p>
+                    <p><strong>Recommendations:</strong> The social media comments could be visually integrated more seamlessly, perhaps as subtle background elements or reflections. Consider a more original and character-specific motivational line.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">0:58-1:22</span>
+                    <h4>The "Make in India" Mission</h4>
+                    <p><strong>Description:</strong> Bureaucrat states Chandrayaan-3 is "our only chance." Visuals of global supply chain disruptions due to Covid-19, leading to the challenge of making Chandrayaan-3 "entirely in India." Female scientist questions, "Sir, how long do we keep Chandrayaan-3 on hold?" Arjun is seen working intensely.</p>
+                    <p><strong>✅ Working:</strong> Introduces additional, realistic obstacles (Covid, supply chain) and the patriotic "Make in India" theme. This adds layers to the challenge. The scientists' frustration is palpable.</p>
+                    <p><strong>❌ Not Working:</strong> The news overlay here is quite prominent and covers a large portion of the screen, momentarily shifting focus from the character drama.</p>
+                    <p><strong>Recommendations:</strong> Experiment with integrating news information more dynamically, perhaps through soundbites or graphics that don't obscure the main visuals.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">1:22-1:40</span>
+                    <h4>Renewed Hope & Final Cliffhanger</h4>
+                    <p><strong>Description:</strong> Female scientist declares, "Challenge accepted, sir." Dr. Ramaiah performs a traditional puja (blessing) on a rocket model, then tells his team, "Let's go to the moon." Intense work in the control room. A final countdown to ignition, then an urgent phone call to stop the launch. Fiery rocket engines. The screen goes black.</p>
+                    <p><strong>✅ Working:</strong> Excellent build-up of hope and national pride, followed by immediate, renewed tension. The puja adds a cultural touch. The final cliffhanger is effective in compelling viewers to watch the series.</p>
+                    <p><strong>❌ Not Working:</strong> The sudden call to stop the launch feels a little rushed and generic as a cliffhanger; the nature of the problem isn't hinted at, making it a pure "danger" moment rather than a specific dilemma.</p>
+                    <p><strong>Recommendations:</strong> While the cliffhanger works, hinting at the type of problem (e.g., "power fluctuations," "software glitch") could make it more impactful and connect back to the earlier "perfect program" discussions.</p>
+                </div>
+
+                <div class="segment-card">
+                    <span class="segment-time">1:40-1:47</span>
+                    <h4>Title Card & Brand Outro</h4>
+                    <p><strong>Description:</strong> "hotstar specials SPACE GEN CHANDRAYAAN" appears with a starry, space background. Release date: "ALL EPISODES | JAN 23". The JioHotstar logo animates.</p>
+                    <p><strong>✅ Working:</strong> Clear, impactful title card. The space background ties into the theme. Clear call to action with release date.</p>
+                    <p><strong>❌ Not Working:</strong> The starry background for the title, while thematic, is a common visual trope.</p>
+                    <p><strong>Recommendations:</strong> Consider a more unique visual for the title card that subtly references the journey or the cultural elements explored in the series.</p>
+                </div>
+            </div>
+
+            <!-- Marketing Buzz / Promotion & Branding -->
+            <div id="marketing-buzz" class="tab-content">
+                <h2>🚀 Marketing Buzz: Promotion & Branding Strategy</h2>
+                
+                <div class="analysis-section">
+                    <h3>Genre and Target Audience</h3>
+                    <p><strong>Genre:</strong> Space Drama, Scientific Thriller, Patriotic Historical Drama. It combines elements of suspense, human resilience, and national achievement.</p>
+                    
+                    <h4>Target Audience:</h4>
+                    <ul>
+                        <li><strong>Primary:</strong> Indian audiences who followed the Chandrayaan missions, those interested in science, technology, and inspiring national stories.</li>
+                        <li><strong>Secondary:</strong> Fans of dramas based on true events, space enthusiasts globally, and viewers looking for underdog stories of perseverance.</li>
+                        <li><strong>Demographics:</strong> Likely skews towards adults (25-55) who appreciate thoughtful, character-driven narratives with a strong emotional core.</li>
+                    </ul>
+                </div>
+
+                <div class="promo-card">
+                    <h4>1. Instagram Campaign: #IndiaMoonMissionGlowUp</h4>
+                    <p><strong>Concept:</strong> A short, trending-audio-driven montage showing the "before and after" of the Chandrayaan-2 failure vs. the Chandrayaan-3 triumph, with a focus on the emotional journey of the scientists.</p>
+                    
+                    <h5>Visual Description:</h5>
+                    <ul>
+                        <li><strong>0-3s:</strong> Quick cuts of intense, worried faces in the control room (from Chandrayaan-2 failure in trailer). Use a trending, slightly melancholic sound.</li>
+                        <li><strong>3-7s:</strong> Text overlay: "They called us quitters." Fast cuts of negative social media comments.</li>
+                        <li><strong>7-12s:</strong> Transition to more determined, focused faces, scientists working diligently (from Chandrayaan-3 prep in trailer). Sound switches to an upbeat, inspiring trending audio.</li>
+                        <li><strong>12-15s:</strong> Text overlay: "But we're problem solvers. Not quitters." Quick shot of the rocket launching, then the "SPACE GEN" title.</li>
+                        <li><strong>15s:</strong> "ALL EPISODES | JAN 23 | JioHotstar"</li>
+                    </ul>
+                    
+                    <p><strong>Caption:</strong> "From the ashes of failure, rises the flame of a nation's ambition. 🚀 Experience the untold story of resilience, grit, and the audacious journey to the moon. #IndiaMoonMissionGlowUp #SpaceGen #Chandrayaan #JioHotstar #InspiredByRealEvents #ISRO"</p>
+                    
+                    <p><strong>Why it works for Instagram:</strong> Short, attention-grabbing, uses trending audio, clear emotional arc, relevant hashtags, taps into national pride and comeback narratives.</p>
+                </div>
+
+                <div class="promo-card">
+                    <h4>2. Instagram Campaign: "The Faces Behind the Frontier" (Carousel/Reel)</h4>
+                    <p><strong>Concept:</strong> A more reflective, visually appealing campaign focusing on the human element and the emotional depth of the story. Could be a carousel post or a short reel with cinematic cuts.</p>
+                    
+                    <h5>Visual Description (for Reel):</h5>
+                    <ul>
+                        <li><strong>0-5s:</strong> Slow-motion, cinematic shots of Arjun looking despairing in the bathroom, then resolute in the control room. Use an evocative, orchestral snippet from the series score.</li>
+                        <li><strong>5-10s:</strong> Elegant split screen or quick cuts showcasing the female scientist's worried and determined expressions. Include Dr. Ramaiah's solemn and then hopeful face.</li>
+                        <li><strong>10-15s:</strong> Text overlay: "Beyond the science, beyond the stars, lies a human story of unwavering spirit." Beautiful shot of the lander approaching the moon.</li>
+                        <li><strong>15-20s:</strong> Trailer's title card and release date.</li>
+                    </ul>
+                    
+                    <p><strong>Caption:</strong> "Failure isn't the end, it's a launchpad for triumph. 🌙🚀 Journey with the brilliant minds who turned setback into a spectacular comeback. #SpaceGenChandrayaan unveils the untold human drama behind India's historic moon mission. Experience the resilience. Feel the pride. #JioHotstar #SpaceMission #TrueStory #IndianSpaceProgram #ComingSoon"</p>
+                    
+                    <p><strong>Why it works for Instagram:</strong> Visually rich, focuses on human emotion and character, slightly longer format allows for more storytelling, uses a more premium aesthetic, encourages deeper engagement through thoughtful captions.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Brand & Monetization Opportunities</h3>
+                    
+                    <div class="brand-card">
+                        <strong>Tata Motors / Mahindra & Mahindra:</strong> As major Indian conglomerates, they represent national manufacturing and innovation ("Make in India" theme). Product placement of their electric vehicles or SUVs for character commutes, or a co-branded campaign around "driving India forward."
+                    </div>
+                    
+                    <div class="brand-card">
+                        <strong>Infosys / Wipro / TCS (IT Giants):</strong> These companies are synonymous with Indian technological prowess. Sponsorships could highlight their role in fostering tech talent and innovation, linking to the scientific brilliance of ISRO. On-screen branding in control room simulations or data analysis scenes.
+                    </div>
+                    
+                    <div class="brand-card">
+                        <strong>BYJU'S / Unacademy (EdTech Platforms):</strong> Given the educational and inspirational nature of space exploration, these brands could sponsor segments focusing on STEM education, inspiring the next generation of scientists and engineers. Promotional partnerships for educational content related to space science.
+                    </div>
+                    
+                    <div class="brand-card">
+                        <strong>State Bank of India / HDFC Bank (Banking):</strong> Major Indian banks that cater to the national populace. Could sponsor segments relating to national investment in science or individual scientists' financial journeys, subtly connecting to the broader Indian narrative.
+                    </div>
+                    
+                    <div class="brand-card">
+                        <strong>Titan (Watches):</strong> Subtle product placement of watches on the scientists' wrists, especially during intense countdowns, symbolizing precision and time. A co-branded campaign on "precision and pursuit of excellence."
+                    </div>
+                    
+                    <div class="brand-card">
+                        <strong>Monetization through Merchandise:</strong> Official merchandise (ISRO branded apparel, miniature rocket models, space-themed stationery) could leverage the patriotic sentiment and interest in the mission.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Critic's Lens / SWOT & Multimodal Analysis -->
+            <div id="critics-lens" class="tab-content">
+                <h2>🧠 Critic's Lens: Multimodal Emotion & Dissonance Analysis</h2>
+                
+                <div class="analysis-section">
+                    <p>This section analyzes selected key moments where dialogue, vocal tone, and visual cues converge or diverge.</p>
+                </div>
+
+                <div class="emotion-analysis">
+                    <h4>Timestamp 0:07 - Arjun in Control Room (Pre-failure)</h4>
+                    
+                    <h5>Component 1: Textual Emotion (NLP)</h5>
+                    <p><strong>Dialogue:</strong> "Initiating fine braking. Copy. Systems green."</p>
+                    <p><strong>Sentiment:</strong> Neutral-Positive | <strong>Discrete Emotions:</strong> Confidence, Professionalism</p>
+                    
+                    <h5>Component 2: Vocal Tone Emotion (SER)</h5>
+                    <p><strong>Acoustic Features:</strong> Steady pitch, clear prosody, minimal jitter/shimmer</p>
+                    <p><strong>Deduced Emotion:</strong> Calm, Controlled, Professional</p>
+                    
+                    <h5>Component 3: Visual Emotion Analysis</h5>
+                    <p><strong>Facial Expressions:</strong> Intense focus, slight furrow in brow, wide-open eyes</p>
+                    <p><strong>Body Language:</strong> Leaning into microphone, posture is upright and engaged</p>
+                    
+                    <h5>The "Insight" Engine (Fusion & Dissonance)</h5>
+                    <p><strong>Alignment:</strong> Strong alignment. Text, voice, and visuals all convey professionalism and intense focus. The slight visual tension (furrowed brow) hints at the immense pressure, creating a subtle foreshadowing that this "normal" is highly fragile. This enhances the impending sense of doom.</p>
+                </div>
+
+                <div class="emotion-analysis">
+                    <h4>Timestamp 0:13-0:14 - Arjun & Female Scientist (Moment of Crisis)</h4>
+                    
+                    <h5>Component 1: Textual Emotion (NLP)</h5>
+                    <p><strong>Dialogue:</strong> "3 kilometers... 2.9... 2.786..." (The numbers themselves are neutral but the context implies critical status)</p>
+                    <p><strong>Sentiment:</strong> Neutral (in words), but context implies Negative | <strong>Discrete Emotions:</strong> Anticipation, Anxiety</p>
+                    
+                    <h5>Component 2: Vocal Tone Emotion (SER)</h5>
+                    <p><strong>Acoustic Features:</strong> Arjun's voice is low, strained, increasing in pace. Female scientist's breath is short, almost a gasp.</p>
+                    <p><strong>Deduced Emotion:</strong> High Anxiety, Fear, Stress</p>
+                    
+                    <h5>Component 3: Visual Emotion Analysis</h5>
+                    <p><strong>Facial Expressions:</strong> Arjun's eyes are wide, mouth slightly agape, fixed on a screen. Female scientist's expression is deeply concerned, eyes wide, hand to mouth in contemplation.</p>
+                    <p><strong>Body Language:</strong> Both are rigid, leaning forward, intensely focused.</p>
+                    
+                    <h5>The "Insight" Engine (Fusion & Dissonance)</h5>
+                    <p><strong>Alignment:</strong> Very strong alignment. The neutral numbers are transformed into indicators of impending disaster by the vocal and visual cues. The escalating vocal strain and visible fear on faces create a powerful, shared moment of dread.</p>
+                </div>
+
+                <div class="emotion-analysis">
+                    <h4>Timestamp 0:35-0:36 - Arjun during Interrogation</h4>
+                    
+                    <h5>Component 1: Textual Emotion (NLP)</h5>
+                    <p><strong>Dialogue:</strong> "Sir, not even once. My program was perfect."</p>
+                    <p><strong>Sentiment:</strong> Positive (about his work), slightly Defensive | <strong>Discrete Emotions:</strong> Confidence, Frustration, Denial</p>
+                    
+                    <h5>Component 2: Vocal Tone Emotion (SER)</h5>
+                    <p><strong>Acoustic Features:</strong> Slightly elevated pitch, firm prosody, a hint of defensiveness in the articulation.</p>
+                    <p><strong>Deduced Emotion:</strong> Resolute, Defiant, but underlying Stress</p>
+                    
+                    <h5>Component 3: Visual Emotion Analysis</h5>
+                    <p><strong>Facial Expressions:</strong> Direct eye contact, firm jawline, but eyes show a flicker of vulnerability or hurt.</p>
+                    <p><strong>Body Language:</strong> Sits upright, hands gesturing slightly, trying to maintain composure.</p>
+                    
+                    <h5>The "Insight" Engine (Fusion & Dissonance)</h5>
+                    <p><strong>Subtle Dissonance:</strong> The words are "perfect" and confident, but the vocal tone and especially Arjun's eyes reveal an underlying frustration or even despair at not being believed, or perhaps a flicker of self-doubt despite his words. This dissonance adds depth, suggesting he's trying to convince himself as much as his interrogator.</p>
+                </div>
+
+                <div class="emotion-analysis">
+                    <h4>Timestamp 0:43-0:44 - Arjun's Despair</h4>
+                    
+                    <h5>Component 1: Textual Emotion (NLP)</h5>
+                    <p><strong>Dialogue:</strong> "I think I'm just... a failure."</p>
+                    <p><strong>Sentiment:</strong> Negative | <strong>Discrete Emotions:</strong> Despair, Self-condemnation, Resignation</p>
+                    
+                    <h5>Component 2: Vocal Tone Emotion (SER)</h5>
+                    <p><strong>Acoustic Features:</strong> Low pitch, quiet volume, slow and deliberate prosody, wavering quality.</p>
+                    <p><strong>Deduced Emotion:</strong> Sadness, Defeat, Hopelessness</p>
+                    
+                    <h5>Component 3: Visual Emotion Analysis</h5>
+                    <p><strong>Facial Expressions:</strong> Downcast eyes, slumped shoulders, furrowed brow, reflecting a complete lack of energy.</p>
+                    <p><strong>Body Language:</strong> Leaning over a sink, head lowered, listless.</p>
+                    
+                    <h5>The "Insight" Engine (Fusion & Dissonance)</h5>
+                    <p><strong>Strong Alignment:</strong> Text, voice, and visuals are in complete harmony, powerfully conveying Arjun's deep despair and feeling of personal failure. This moment is crucial for establishing his character's low point before his eventual rise.</p>
+                </div>
+
+                <div class="emotion-analysis">
+                    <h4>Timestamp 0:55-0:57 - Female Scientist to Arjun</h4>
+                    
+                    <h5>Component 1: Textual Emotion (NLP)</h5>
+                    <p><strong>Dialogue:</strong> "Arjun, you're a problem solver. Not a quitter."</p>
+                    <p><strong>Sentiment:</strong> Positive, Encouraging | <strong>Discrete Emotions:</strong> Support, Belief, Motivation</p>
+                    
+                    <h5>Component 2: Vocal Tone Emotion (SER)</h5>
+                    <p><strong>Acoustic Features:</strong> Gentle but firm pitch, steady and clear prosody, warm timbre.</p>
+                    <p><strong>Deduced Emotion:</strong> Encouraging, Empathetic, Resolute</p>
+                    
+                    <h5>Component 3: Visual Emotion Analysis</h5>
+                    <p><strong>Facial Expressions:</strong> Direct, unwavering eye contact, soft but firm smile.</p>
+                    <p><strong>Body Language:</strong> Leans slightly towards Arjun, open posture, conveying warmth and support. Arjun, in response, looks at her with a mix of surprise and dawning hope.</p>
+                    
+                    <h5>The "Insight" Engine (Fusion & Dissonance)</h5>
+                    <p><strong>Strong Alignment:</strong> This is a moment of clear, positive alignment. The supportive words, warm vocal tone, and empathetic visuals create a powerful and believable moment of encouragement, a pivotal turning point for Arjun's character.</p>
+                </div>
+
+                <div class="emotion-analysis">
+                    <h4>Timestamp 1:38-1:39 - Arjun in Crisis (Second Launch)</h4>
+                    
+                    <h5>Component 1: Textual Emotion (NLP)</h5>
+                    <p><strong>Dialogue:</strong> "Stop, stop, stop! Ma'am, we need to stop the launch now!"</p>
+                    <p><strong>Sentiment:</strong> Negative, Urgent | <strong>Discrete Emotions:</strong> Panic, Alarm, Desperation</p>
+                    
+                    <h5>Component 2: Vocal Tone Emotion (SER)</h5>
+                    <p><strong>Acoustic Features:</strong> High pitch, rapid prosody, loud volume, clear vocal jitter indicating extreme stress.</p>
+                    <p><strong>Deduced Emotion:</strong> Panic, Terror, Urgency</p>
+                    
+                    <h5>Component 3: Visual Emotion Analysis</h5>
+                    <p><strong>Facial Expressions:</strong> Eyes wide with alarm, mouth open, shouting into phone.</p>
+                    <p><strong>Body Language:</strong> Head snapping up, hands gripping the phone tightly, tense posture.</p>
+                    
+                    <h5>The "Insight" Engine (Fusion & Dissonance)</h5>
+                    <p><strong>Strong Alignment:</strong> All three components perfectly convey absolute panic and urgency, creating a compelling cliffhanger. The sudden shift from determined launch to desperate halt is dramatically effective because of this strong multimodal alignment.</p>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>SWOT Analysis (Emotion & Dissonance)</h3>
+                    <div class="swot-grid">
+                        <div class="swot-card strength">
+                            <h4>Strengths</h4>
+                            <ul>
+                                <li>Effectively uses multimodal cues to amplify moments of high tension, despair, and encouragement</li>
+                                <li>Strong emotional performances by lead actors, especially Arjun's journey from despair to determination</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card weakness">
+                            <h4>Weaknesses</h4>
+                            <ul>
+                                <li>Some emotional beats, particularly the "problem solver, not a quitter" line, are somewhat archetypal and could benefit from more subtle, character-specific emotional expression</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card opportunity">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li>Explore more nuanced emotional states beyond direct fear, sadness, or anger (e.g., quiet resolve, subtle pride, underlying anxiety despite outward calm) to add depth</li>
+                            </ul>
+                        </div>
+                        <div class="swot-card threat">
+                            <h4>Threats</h4>
+                            <ul>
+                                <li>Over-reliance on easily recognizable emotional tropes could make the series predictable</li>
+                                <li>Lack of complexity in emotional arcs might reduce long-term viewer engagement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Behind the Cut / Hidden Insights -->
+            <div id="behind-cut" class="tab-content">
+                <h2>🔍 Behind the Cut: Hidden Insights & Deeper Meanings</h2>
+                
+                <div class="insight-box">
+                    <h4>🏆 The Weight of Expectation</h4>
+                    <p>The trailer subtly highlights the immense pressure on Indian scientists, not just from their superiors, but from the entire nation and the global community. The PM's hug (0:22) signifies national pride, but the subsequent interrogation (0:24) reveals the flip side of that coin – <strong>the crushing burden of failure</strong>.</p>
+                </div>
+
+                <div class="insight-box">
+                    <h4>💔 Beyond the Data, the Human Element</h4>
+                    <p>While showcasing technological feats, the narrative consistently pulls back to the human cost of ambition. Arjun's despair (0:43) and the female scientist's frustration (1:12) emphasize that <strong>behind every launch and landing are individuals grappling with profound emotional highs and lows</strong>.</p>
+                </div>
+
+                <div class="insight-box">
+                    <h4>🇮🇳 "Make in India" as a Metaphor for Resilience</h4>
+                    <p>The Covid-19 pandemic disrupting supply chains forces the team to create Chandrayaan-3 "entirely in India" (1:16). This isn't just a practical solution; it <strong>symbolizes India's self-reliance and determination to overcome global challenges through indigenous innovation</strong>, mirroring the theme of overcoming internal failures.</p>
+                </div>
+
+                <div class="insight-box">
+                    <h4>🔄 The Cycle of Innovation and Failure</h4>
+                    <p>The Chandrayaan-2 failure is not just a plot point but a foundational element. The series appears to explore the <strong>scientific process where failure is an inherent part of learning and eventually, success</strong>. The elder scientist's blunt statement, "If it was perfect, it wouldn't have crashed" (0:39), is harsh but perhaps a necessary truth for progress.</p>
+                </div>
+
+                <div class="insight-box">
+                    <h4>🙏 Spiritual and Scientific Synthesis</h4>
+                    <p>The scene where Dr. Ramaiah performs a puja on a rocket model (1:23) is a powerful, subtle insight into the Indian ethos, where <strong>scientific endeavor is often intertwined with cultural and spiritual beliefs</strong>, seeking blessings for success.</p>
+                </div>
+            </div>
+
+            <!-- Director's Call / Actionable Insights -->
+            <div id="directors-call" class="tab-content">
+                <h2>🎯 Director's Call: Actionable Insights</h2>
+                
+                <div class="action-item">
+                    <div class="action-number">1</div>
+                    <div>
+                        <strong>Deepen Character Arcs:</strong> While the trailer hints at personal struggles, ensure the full series provides substantial screen time to explore the lead characters' emotional journeys, personal sacrifices, and relationships beyond their professional roles. Avoid making them archetypes of success or failure.
+                    </div>
+                </div>
+                
+                <div class="action-item">
+                    <div class="action-number">2</div>
+                    <div>
+                        <strong>Vary Pacing for Emotional Resonance:</strong> For the full series, intersperse the high-octane, fast-paced sequences with moments of calm, reflection, and slower-paced character development. This will allow the audience to breathe, process emotions, and connect more deeply with the stakes.
+                    </div>
+                </div>
+                
+                <div class="action-item">
+                    <div class="action-number">3</div>
+                    <div>
+                        <strong>Refine Dialogue for Authenticity:</strong> Review and refine dialogue to minimize generic or clichéd lines. Strive for more nuanced, character-specific dialogue that feels organic to scientists and decision-makers in high-pressure situations.
+                    </div>
+                </div>
+                
+                <div class="action-item">
+                    <div class="action-number">4</div>
+                    <div>
+                        <strong>Enhance Visual Storytelling in Subtler Scenes:</strong> For scenes outside the control room or space, utilize more distinctive lighting, color palettes, and set dressing to build atmosphere and convey meaning without relying on heavy exposition or rapid cuts.
+                    </div>
+                </div>
+                
+                <div class="action-item">
+                    <div class="action-number">5</div>
+                    <div>
+                        <strong>Leverage Multimodal Dissonance:</strong> Intentionally use moments where text, voice, and visuals are slightly misaligned to create deeper character complexity (e.g., a character stating confidence but showing subtle anxiety) to add layers to their portrayal.
+                    </div>
+                </div>
+                
+                <div class="action-item">
+                    <div class="action-number">6</div>
+                    <div>
+                        <strong>Strategic News Overlay Integration:</strong> If news overlays are used in the series, consider more sophisticated visual integration methods (e.g., lower thirds, reflections, or animated graphics that don't obscure faces) to provide context without disrupting the main narrative flow.
+                    </div>
+                </div>
+                
+                <div class="action-item">
+                    <div class="action-number">7</div>
+                    <div>
+                        <strong>Amplify "Make in India" Narratives:</strong> Beyond stating the challenge, visually showcase the ingenuity and struggle involved in manufacturing components domestically. This could involve montage sequences of intricate work, problem-solving, and collaboration.
+                    </div>
+                </div>
+                
+                <div class="action-item">
+                    <div class="action-number">8</div>
+                    <div>
+                        <strong>Targeted Promotion Beyond Patriotism:</strong> While patriotism is a strong hook, diversify promotional messaging to also highlight the universal themes of scientific pursuit, resilience, teamwork, and overcoming adversity to attract a broader international audience.
+                    </div>
+                </div>
+                
+                <div class="action-item">
+                    <div class="action-number">9</div>
+                    <div>
+                        <strong>Develop Interactive Content:</strong> For promotion, consider creating interactive content (e.g., quizzes about space missions, mini-documentaries about ISRO, Q&A with real scientists) to engage the audience more deeply, especially on platforms like YouTube or dedicated microsites.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Watch Trailer -->
+            <div id="watch-trailer" class="tab-content">
+                <h2>▶️ Watch the Trailer</h2>
+                <div class="video-container">
+                    <a class="youtube-button" href="https://www.youtube.com/watch?v=eshqiwiA9sA" target="_blank" rel="noopener noreferrer">
+                        <span class="youtube-icon">🚀</span>
+                        Watch "Space Gen Chandrayaan" Official Trailer on YouTube
+                    </a>
+                    <p style="margin-top: 30px; color: #8b949e;">
+                        <strong>Platform:</strong> Hotstar Specials (JioHotstar)<br>
+                        <strong>Production:</strong> A TVF Creation<br>
+                        <strong>Release:</strong> All Episodes | January 23<br>
+                        <strong>Cast:</strong> Nakuul Mehta, Shriya Pilgaonkar, Jitin Gulati<br>
+                        <strong>Tag:</strong> Inspired by Real Events
+                    </p>
+                    <div style="margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #0d1d2d 0%, #0a1520 100%); border-radius: 10px; border: 1px solid #1f6feb;">
+                        <p style="color: #79c0ff; font-size: 1.1em; margin: 0;">🌙 "From the ashes of failure, rises the flame of a nation's ambition."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="logo-container">
+                <div class="cube">
+                    <div class="cube-face front">3D</div>
+                    <div class="cube-face back">AI</div>
+                    <div class="cube-face left">i</div>
+                    <div class="cube-face right">3</div>
+                    <div class="cube-face top">🚀</div>
+                    <div class="cube-face bottom">D</div>
+                </div>
+            </div>
+            <h3>insights3D | Trailer Intelligence</h3>
+            <p style="color: #8b949e;">Data-Driven. Digital. Decoded by AI.</p>
+            <p style="margin-top: 10px;">Contact: <a href="mailto:aneesh@insights3d.com">aneesh@insights3d.com</a> | <a href="mailto:joydip@insights3d.com">joydip@insights3d.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
